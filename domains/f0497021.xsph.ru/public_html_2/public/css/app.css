@@ -1,0 +1,118 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.content-wrapper {
+    position: absolute;
+    display: flex;
+    background-image: url(../img/bg-main.gif);
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: 395px;
+    height: 800px;
+    width: 100%;
+    max-width: 450px;
+
+    justify-content: center;
+}
+
+.content-wrapper_test-bg {
+    background-image: url(../img/bg-test.gif);
+}
+
+.content {
+    position: relative;
+    padding: 350px 30px 0 30px ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+}
+
+.content-wrapper_test-bg .content{
+    padding: 150px 30px 0 40px ;
+}
+
+.timer {
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+button, a, input[type=submit]  {
+    text-align: center;
+    display: flex;
+    border-radius: 12px;
+    max-width: 200px;
+    height: 35px;
+    font-size: 15px;
+    color: #000000;
+    background-color: #8DC6E9;
+    border-top: 1px solid gray ;
+    border-right: 1px solid gray ;
+    border-bottom: 1px solid black ;
+    border-left: 1px solid black ;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    text-decoration: unset;
+}
+
+a[disabled] {
+    background-color: lightgray;
+    cursor: not-allowed;
+    border: none;
+}
+
+a[disabled]:hover, a[disabled]:focus {
+   border: none;
+    background-color: lightgray;
+    cursor: not-allowed;
+}
+
+
+button:focus, a:focus,
+input[type=submit]:focus {
+    outline: none;
+    border-top: 1px solid black ;
+    border-right: 1px solid black ;
+    border-bottom: 1px solid gray ;
+    border-left: 1px solid gray ;
+}
+
+input[type=text], input[type=password], input[type=email] {
+    border-radius: 4px;
+    height: 10px;
+    border: 2px solid black;
+    width: 87% ;
+    max-width: 250px;
+    margin: 0 auto;
+}
+
+input:focus {
+    box-shadow: unset !important;
+}
+
+.test__info {
+    text-align: center;
+    font-size: 12px;
+}
+
